@@ -1,0 +1,13 @@
+@CHARSET "gbk";
+a:link {
+	color: #000;
+	
+}
+a:visited {
+	color: #000;
+	
+}
+a:hover {
+	color: #F00;
+	text-decoration: underline;
+}

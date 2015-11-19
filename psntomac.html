@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+.container {
+	font-size: 16px;
+	width:640px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+</style>
+<script language="JavaScript" type="text/javascript" src="myGame.js"></script>
+</head>
+
+<body onload="drawRect()">
+<div class="container">
+  <div class="container">
+   <div class="container">
+    <canvas width="640" id="canvas" onmousedown="play(event)" height="640">你的浏览器不支持HTML5 canvas  ，请使用 google chrome 浏览器 打开.
+    </canvas>
+    </br></br>
+ <table width="640" border="2">
+  <tr>
+    <td bgcolor="#FF9966" align="center"><form id="form4" name="form4" method="post" action="">
+        <input type="submit" name="button" id="button" value="新局" />
+      </form></td>
+    <td bgcolor="#FF9966" align="center"><form id="form5" name="form5" method="post" action="">
+      <!--<<input type="submit" name="button2" id="button2" value="悔棋" />-->
+      <button onmousedown="abc()">悔棋</button>
+    </form></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF9966">先后手：</td>
+    <td><form id="form1" name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="RadioGroup1" value="我先手" id="RadioGroup1_0" />
+          我先手</label>
+        
+        <label>
+          <input type="radio" name="RadioGroup1" value="我后手" id="RadioGroup1_1" />
+          我后手</label>
+        <br />
+      </p>
+    </form></td>
+    
+  </tr>
+  <tr>
+    <td bgcolor="#FF9966">电脑水平：</td>
+    <td><form id="form2" name="form2" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_0" />
+          初级</label>
+      
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_1" />
+         中级</label>
+       
+        <label>
+          <input type="radio" name="RadioGroup2" value="单选" id="RadioGroup2_2" />
+          高级</label>
+        <br />
+      </p>
+    </form></td>
+   
+  </tr>
+  <tr>
+    <td bgcolor="#FF9966">棋盘大小：
+     </td>
+    <td> <form id="form3" name="form3" method="post" action="">
+        <p>
+          <label>
+            <input type="radio" name="RadioGroup3" value="单选" id="RadioGroup3_0" />
+            15*15</label>
+          
+          <label>
+            <input type="radio" name="RadioGroup3" value="单选" id="RadioGroup3_1" />
+            17*17</label>
+          
+          <label>
+            <input type="radio" name="RadioGroup3" value="单选" id="RadioGroup3_2" />
+            19*19</label>
+          <br />
+        </p>
+      </form></td>
+    
+  </tr>
+</table>
+    
+  </div>
+</div>
+</body>
+</html>

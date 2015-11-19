@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Insert title here</title>
+<link href="../release/style.css" rel="stylesheet" type="text/css" />
+<link href="../release/link.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#contain {
+	margin: auto;
+	padding: 10px;
+	clear: both;
+	width: 960px;
+}
+#welcome {
+	height: 28px;
+	width: 200px;
+}
+#welcome {
+	height: 28px;
+	width: 200px;
+}
+#lg {
+	float: left;
+	height: 345px;
+	width: 295px;
+}
+#non1 {
+	height: 50px;
+	width: 295px;
+}
+#lg1 {
+	height: 295px;
+	width: 295px;
+}
+#main {
+	height: 345px;
+	width: 960px;
+	border: thick solid #0F0;
+}
+#login {
+	float: right;
+	height: 345px;
+	width: 665px;
+}
+</style>
+</head>
+ <script language="javascript">
+     function chkinput(form){
+             if(form.username.value==""){
+                    alert("用户名或密码不能为空!");
+                    form.username.focus();
+                    return false;
+                 }
+             if(form.pass.value==""){
+                 alert("用户名或密码不能为空!");
+                 form.pass.focus();
+                 return false;
+              }
+             
+              
+             //return true;        //提交表单
+             
+         }
+</script>
+<body>
+<div id="contain">
+  <div id="welcome"><img name="" src="images/logo3.png" width="200" height="28" alt="" style="background-color: #00FFFF" />
+    
+  </div>
+  <div id="main">
+  <div id="lg">
+    <div id="non1"></div>
+    <div id="lg1"><img name="" src="images/logo.png" width="295" height="295" alt="" style="background-color: #FF00FF" /></div>
+  </div>
+  <div id="login">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<form id="form" name="form" onsubmit="return chkinput(form)" method="post" action="login_chk.php">
+<table width="300" border="0" align="center">
+      <tr>
+        <td height="35" colspan="2">用户名</td>
+      </tr>
+      <tr>
+        <td height="42" colspan="2"><label for="username"></label>
+          <input type="text" name="username" id="username" /></td>
+      </tr>
+      <tr>
+        <td height="38" colspan="2">密码</td>
+      </tr>
+      <tr>
+        <td height="37" colspan="2"><label for="pass"></label>
+          <input type="password" name="pass" id="pass" /></td>
+      </tr>
+      <tr>
+        <td height="23" align="center"><input type="submit" name="submit" id="submit" value="登录" /><input type="reset" name="reset" id="reset" value="重置" /></td>
+    
+      </tr>
+      <tr>
+        <td height="32"><a href="../admin/index.php/" target="_self">忘记密码？</a></td>
+        <td><a href="regist.php/" target="_self">快速注册</a></td>
+      </tr>
+</table>
+</form>
+ </div>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>
